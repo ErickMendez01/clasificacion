@@ -1,0 +1,28 @@
+Supabase, Tutorial Práctico y Overview (REST API):
+https://www.youtube.com/watch?v=pi33WDrgfpI
+
+Javascript para Aprender React:
+https://www.youtube.com/watch?v=lVqHiTCIRQg
+
+Ruta para Aprender React en 2024 (React Roadmap):
+https://www.youtube.com/watch?v=z997qRX2gzk
+
+React y Supabase, Aplicacion completa - Auth y CRUD:
+https://www.youtube.com/watch?v=I1zzgAfSUBQ
+
+Curso de Reactjs desde Cero para principiantes 2022:
+Jonmircha:
+https://www.youtube.com/watch?v=rLoWMU4L_qE&t=0s
+Pildoras Informaticas:
+https://www.youtube.com/watch?v=nAe_a1mdNDY&list=PLU8oAlHdN5BmlVfm2bJshR3qPtoyukQ_b
+
+Supabase: 
+https://www.aplyca.com/blog/blog-supabase-una-alternativa-agil-de-codigo-abierto
+
+Curso de figma:
+https://www.youtube.com/watch?v=_c26Fyi7RFA&list=PLvq-jIkSeTUbpfewvbKLhHctdkgadAy-K&index=2
+
+Javascript Arrays - Metodos (map, filter, reduce, sort, etc.):
+https://www.youtube.com/watch?v=qqR1enOceVg
+
+
