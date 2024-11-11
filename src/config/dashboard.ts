@@ -4,15 +4,15 @@ export const dashboardConfig : DashboardConfig = {
     mainNav:[
         {
             title: "Funcionalidades",
-            href:"#funcionalidades",
+            href:"/#funcionalidades",
         },
         {
             title: "Conocenos",
-            href:"#Conocenos",
+            href:"/#Conocenos",
         },
         {
             title: "Contacto",
-            href:"#Contacto",
+            href:"/#Contacto",
         }
     ],
 }
