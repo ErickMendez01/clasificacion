@@ -1,15 +1,15 @@
 "use client";
 
-import Link from "next/link";
+import Link from "next/link"
 import {
   Button,
   Navbar,
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-} from "@nextui-org/react";
-import { MainNavItem } from "@/types";
-import { usePathname } from "next/navigation";
+} from "@nextui-org/react"
+import { MainNavItem } from "@/types"
+import { usePathname } from "next/navigation"
 
 interface MainNavProps {
   items?: MainNavItem[];
@@ -28,7 +28,7 @@ export function MainNav({ items = [], children }: MainNavProps) {
     >
       <NavbarBrand>
         <Link className="font-semibold flex" href="/">
-          Check Task
+          Clinica Mental
         </Link>
       </NavbarBrand>
       <NavbarContent justify="center">
@@ -51,16 +51,20 @@ export function MainNav({ items = [], children }: MainNavProps) {
       </NavbarContent>
       <NavbarContent justify="end">
         <Button
+        as={Link}
           className="bg-white font-bold border-black"
           variant="faded"
           radius="lg"
+          href="/login"
         >
           Sign in
         </Button>
         <Button
+          as={Link}
           className="text-white font-bold bg-black"
           variant="flat"
           radius="lg"
+          href="/register"
         >
           Sign Up
         </Button>

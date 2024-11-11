@@ -5,8 +5,8 @@ import { MainNav } from "@/components/navbar";
 import { DashboardConfig } from "@/types";
 import { dashboardConfig } from "@/config/dashboard";
 export const metadata: Metadata = {
-  title: "To do list",
-  description: "Maneja tu dia ahora!",
+  title: "Clinica digital",
+  description: "Administra la informacion de tus pacientes!",
 };
 
 export default function RootLayout({
