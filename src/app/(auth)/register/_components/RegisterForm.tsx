@@ -49,7 +49,7 @@ export default function RegisterForm() {
               placeholder="Introduce tu nombre"
               {...register("name")}
               isInvalid={!!errors.name}
-              errorMessage={errors.name?.message as string}
+              errorMessage={errors.name?.message}
             />
             <Input
               isRequired
@@ -58,7 +58,7 @@ export default function RegisterForm() {
               placeholder="Introduce tu correo electrónico"
               {...register("email")}
               isInvalid={!!errors.email}
-              errorMessage={errors.email?.message as string}
+              errorMessage={errors.email?.message}
             />
             <Input
               isRequired
@@ -67,7 +67,7 @@ export default function RegisterForm() {
               placeholder="Introduce la contraseña"
               {...register("password")}
               isInvalid={!!errors.password}
-              errorMessage={errors.password?.message as string}
+              errorMessage={errors.password?.message}
             />
             <Button
               fullWidth
@@ -75,7 +75,7 @@ export default function RegisterForm() {
               radius="lg"
               type="submit"
             >
-              Login
+              Registrarse
             </Button>
           </div>
         </form>

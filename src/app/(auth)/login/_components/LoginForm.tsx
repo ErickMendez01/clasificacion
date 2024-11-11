@@ -1,6 +1,6 @@
-"use client";
-import { LoginSchema, loginSchema } from "@/lib/schemas/loginSchema";
-import { zodResolver } from "@hookform/resolvers/zod";
+"use client"
+import { LoginSchema, loginSchema } from "@/lib/schemas/loginSchema"
+import { zodResolver } from "@hookform/resolvers/zod"
 import {
   Button,
   Card,
@@ -18,7 +18,7 @@ export default function LoginForm() {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<LoginSchema>({ resolver: zodResolver(loginSchema), mode: 'onTouched'});
+  } = useForm<LoginSchema>({ resolver: zodResolver(loginSchema), mode: 'onTouched'})
 
   const onSubmit = (data: LoginSchema) => {
     console.log(data);
@@ -63,7 +63,7 @@ export default function LoginForm() {
               radius="lg"
               type="submit"
             >
-              Login
+              Ingresar
             </Button>
           </div>
         </form>
