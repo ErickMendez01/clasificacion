@@ -8,11 +8,11 @@ export const dashboardConfig : DashboardConfig = {
         },
         {
             title: "Conocenos",
-            href:"/#Conocenos",
+            href:"/#conocenos",
         },
         {
             title: "Contacto",
-            href:"/#Contacto",
+            href:"/#contacto",
         }
     ],
 }
