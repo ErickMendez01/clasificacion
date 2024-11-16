@@ -10,8 +10,8 @@ const Header = () => {
         aria-hidden="true"
         className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
       >
-        <div className="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
-        <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
+        <div className="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-500 dark:from-blue-900"></div>
+        <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-500 to-sky-400 dark:to-indigo-800"></div>
       </div>
       <div className="relative pt-36 px-4 sm:px-6 lg:px-8">
         <div className="lg:w-2/3 mx-auto text-center">

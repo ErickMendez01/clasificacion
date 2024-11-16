@@ -1,13 +1,12 @@
 "use client";
 import { Card } from "@nextui-org/react";
 import React from "react";
-import { FaHandshake, FaHeart } from "react-icons/fa";
 
 const AboutUs = () => {
   return (
     <div
       id="conocenos"
-      className="py-16 px-6 sm:px-12 md:px-24 lg:px-48 bg-gray-50 dark:bg-gray-800 text-center rounded-xl shadow-md transition-all"
+      className="py-16 px-6 sm:px-12 md:px-24 lg:px-48 bg-gray-50 dark:bg-gray-800 text-center rounded-xl transition-all"
     >
       <div className="max-w-3xl mx-auto">
         <div className="flex items-center justify-center space-x-4 mb-6">
