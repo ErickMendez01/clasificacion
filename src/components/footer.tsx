@@ -17,8 +17,8 @@ const Footer = () => {
             </h2>
             <p className="text-gray-400 max-w-xs">
               Somos una plataforma dedicada a ayudar a los profesionales de
-              clínicas mentales a gestionar y clasificar a sus pacientes de
-              manera eficaz y segura.
+              clínicas mentales a clasificar a sus pacientes de manera eficaz y
+              segura.
             </p>
           </div>
           <div className="text-center md:text-left">

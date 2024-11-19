@@ -23,15 +23,15 @@ const AboutUs = () => {
           <Card className="group relative bg-white dark:bg-gray-800 p-8 rounded-3xl transition hover:shadow-2xl">
             <h3 className="text-lg font-semibold">Misión</h3>
             <p className="mt-2 text-sm">
-              Brindar apoyo de calidad en la administración clínica con
-              soluciones tecnológicas eficientes y fáciles de usar.
+            Brindar apoyo de calidad en la evolución clínica con
+            soluciones tecnológicas eficientes y fáciles de usar.
             </p>
           </Card>
           <Card className="group relative bg-white dark:bg-gray-800 p-8 rounded-3xl transition hover:shadow-2xl">
             <h3 className="text-lg font-semibold">Visión</h3>
             <p className="mt-2 text-sm">
-              Ser la plataforma líder en gestión de pacientes, ofreciendo
-              seguridad, precisión y apoyo a profesionales de salud mental.
+            Ser la plataforma líder en clasificación de pacientes, ofreciendo
+            seguridad, precisión y apoyo a profesionales de salud mental.
             </p>
           </Card>
         </div>

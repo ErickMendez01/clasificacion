@@ -14,8 +14,8 @@ const Features = () => {
             Funcionalidades clave de Clínica Mental
           </h2>
           <p className="text-gray-600 dark:text-gray-300">
-            Diseñada para simplificar y optimizar la administración y evaluación
-            de pacientes en el entorno clínico.
+            Diseñada para simplificar y optimizar la evaluación de pacientes en
+            el entorno clínico.
           </p>
         </div>
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -23,11 +23,11 @@ const Features = () => {
             <div className="space-y-4">
               <FaUserMd className="w-12 h-12 text-secondary mx-auto" />
               <h5 className="text-xl font-semibold text-gray-700 dark:text-white text-center group-hover:text-secondary transition">
-                Administración de Pacientes
+                Evaluaciones Simples
               </h5>
               <p className="text-gray-600 dark:text-gray-300 text-center">
-                Organiza y gestiona los perfiles de tus pacientes de manera
-                efectiva y segura.
+                Ingresa los datos indicados en el formulario y realiza una
+                evolución de manera rápida y sencilla.
               </p>
             </div>
           </Card>
@@ -48,11 +48,11 @@ const Features = () => {
             <div className="space-y-4">
               <AiOutlineBarChart className="w-12 h-12 text-secondary mx-auto" />
               <h5 className="text-xl font-semibold text-gray-700 dark:text-white text-center group-hover:text-secondary transition">
-                Análisis de Datos
+                Alertas Reactivas
               </h5>
               <p className="text-gray-600 dark:text-gray-300 text-center">
-                Genera reportes detallados para un análisis clínico preciso y
-                toma de decisiones informada.
+                Genera alertas reactivas con el resultado de la evolución del
+                paciente.
               </p>
             </div>
           </Card>
