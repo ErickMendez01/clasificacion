@@ -1,5 +1,4 @@
 "use client";
-import type { Metadata } from "next";
 import "./globals.css";
 import Providers from "@/components/Providers";
 import { MainNav } from "@/components/navbar";
@@ -9,14 +8,14 @@ import { SecondNav } from "@/components/secondNav";
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   const pathname = usePathname();
-
   return (
     <html lang="en">
-      <body className="mx-auto">
+      <body>
+       
         {(pathname === "/" ||
           pathname === "/login" ||
           pathname === "/register") && (

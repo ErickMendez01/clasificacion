@@ -9,6 +9,7 @@ import {
   SelectItem,
 } from "@nextui-org/react";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 export function DiagnosticForm({
   isOpen,
@@ -57,18 +58,18 @@ export function DiagnosticForm({
       Age: formData.age,
       "Marital Status": formData.marital_status,
       "Education Level": formData.education_level,
-      "Number of Children": formData.num_children, // Corregido
+      "Number of Children": formData.num_children,
       "Smoking Status": formData.smoking_status,
-      "Physical Activity Level": formData.physical_activity, // Corregido
+      "Physical Activity Level": formData.physical_activity,
       "Employment Status": formData.employment_status,
       "Alcohol Consumption": formData.alcohol_consumption,
       "Dietary Habits": formData.dietary_habits,
       "Sleep Patterns": formData.sleep_patterns,
-      "History of Mental Illness": formData.history_mental_illness, // Corregido
-      "History of Substance Abuse": formData.history_substance_abuse, // Corregido
-      "Family History of Depression": formData.family_history, // Corregido
+      "History of Mental Illness": formData.history_mental_illness,
+      "History of Substance Abuse": formData.history_substance_abuse,
+      "Family History of Depression": formData.family_history,
     };
-    
+  
     try {
       const response = await fetch("http://localhost:5000/predict", {
         method: "POST",
@@ -77,15 +78,21 @@ export function DiagnosticForm({
         },
         body: JSON.stringify(data),
       });
+  
+      if (!response.ok) {
+        throw new Error("Error: " + response.statusText);
+      }
+  
       const result = await response.json();
-
-      console.log("Resultado de la predicción:", result.result);
-      // Aquí podrías mostrar el resultado al usuario
+      
+      // Ensure 'result' contains the field you're expecting, otherwise display an appropriate message
+      const prediction = result?.result || "No prediction result available";
+      toast.success(`Resultado de la predicción: ${prediction}`);
     } catch (error) {
-      console.error("Error al hacer la solicitud:", error);
+      toast.error("Error al hacer la solicitud: " + (error instanceof Error ? error.message : "Unknown error"));
     }
   };
-
+  
   return (
     <>
       <Modal

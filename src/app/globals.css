@@ -3,23 +3,48 @@
 @tailwind utilities;
 
 @layer components {
-    .vertical-center {
+  .vertical-center {
     height: calc(100vh - 64px);
-    }
+  }
 
-    .nextui-modal-backdrop {
-        position: fixed !important;
-        inset: 0;
-        z-index: 9999; /* Asegúrate de que esté encima de todo */
-      }
-      
-      .nextui-modal-content {
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+  .nextui-modal-backdrop {
+    position: fixed !important;
+    inset: 0;
+    z-index: 9999; 
+  }
+
+  .nextui-modal-content {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ 
+  .Toastify__toast-container {
+    position: fixed !important;
+    z-index: 9999 !important; 
+    pointer-events: auto;
+  }
+
+  .Toastify__toast {
+    background-color: #333 !important;
+    color: white !important;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  html, body, #__next {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    height: auto;
+    position: static; 
+    overflow: visible; 
+  }
+  
 }
+
 
 
   
