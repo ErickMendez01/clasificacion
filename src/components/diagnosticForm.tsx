@@ -69,30 +69,32 @@ export function DiagnosticForm({
       "History of Substance Abuse": formData.history_substance_abuse,
       "Family History of Depression": formData.family_history,
     };
-  
+
     try {
-      const response = await fetch("http://localhost:5000/predict", {
+      const response = await fetch("/api/predict", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(data),
       });
-  
+
       if (!response.ok) {
         throw new Error("Error: " + response.statusText);
       }
-  
+
       const result = await response.json();
-      
-      // Ensure 'result' contains the field you're expecting, otherwise display an appropriate message
+
       const prediction = result?.result || "No prediction result available";
       toast.success(`Resultado de la predicción: ${prediction}`);
     } catch (error) {
-      toast.error("Error al hacer la solicitud: " + (error instanceof Error ? error.message : "Unknown error"));
+      toast.error(
+        "Error al hacer la solicitud: " +
+          (error instanceof Error ? error.message : "Unknown error")
+      );
     }
   };
-  
+
   return (
     <>
       <Modal
