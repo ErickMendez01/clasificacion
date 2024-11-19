@@ -28,7 +28,7 @@ export function SecondNav({ children }: SecondNavProps) {
           Clinica Mental
         </Link>
       </NavbarBrand>
-      <NavbarContent justify="center">
+      <NavbarContent justify="start">
         <NavbarItem>
           <Link href="/pacientes">Pacientes</Link>
         </NavbarItem>
